@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/boson/projects/PWNKT/TinyTIFF/build/Release/generators/CMakePresets.json"
+    ]
+}
