@@ -49,9 +49,7 @@ class TinyTiffRecipe(ConanFile):
         "README.md",
     )
 
-    def config_options(self):
-        if self.settings.os == "Windows":
-            self.settings.compiler = "Visual Studio"
+    def config_options(self): ...
 
     def layout(self):
         cmake_layout(self)
@@ -72,8 +70,9 @@ class TinyTiffRecipe(ConanFile):
         cmake.configure()
         cmake.build()
 
-    def build_requirements(self):
-        self.tool_requires("cmake/3.22.6")
+    def build_requirements(self): ...
+
+    # self.tool_requires("cmake/3.22.6")
 
     def package(self):
         cmake = CMake(self)
